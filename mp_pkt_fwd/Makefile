@@ -4,7 +4,7 @@ APP_NAME := mp_pkt_fwd
 
 ### Environment constants 
 
-LGW_PATH ?= ../../lora_gateway/libloragw
+LGW_PATH ?= ../submodules/lora_gateway/libloragw
 ARCH ?=
 CROSS_COMPILE ?=
 
@@ -36,7 +36,7 @@ endif
 LGW_INC += $(LGW_PATH)/inc/loragw_hal.h
 LGW_INC += $(LGW_PATH)/inc/loragw_gps.h
 
-TTN_INC := -I../../ttn-gateway-connector/src -I../../ttn-gateway-connector/src/github.com/gogo/protobuf/protobuf -I../../ttn-gateway-connector/src/github.com/TheThingsNetwork -I../../protobuf-c
+TTN_INC := -I../submodules/ttn-gateway-connector/src -I../submodules/ttn-gateway-connector/src/github.com/gogo/protobuf/protobuf -I../submodules/ttn-gateway-connector/src/github.com/TheThingsNetwork -I../submodules/protobuf-c
 ### Linking options
 
 LIBS:=

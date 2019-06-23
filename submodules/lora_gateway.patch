@@ -1,0 +1,35 @@
+diff --git a/libloragw/inc/imst_rpi.h b/libloragw/inc/imst_rpi.h
+index b5ec5da..d9a3bb2 100644
+--- a/libloragw/inc/imst_rpi.h
++++ b/libloragw/inc/imst_rpi.h
+@@ -12,7 +12,7 @@
+ #define DISPLAY_PLATFORM "IMST + Rpi"
+ 
+ /* parameters for native spi */
+-#define SPI_SPEED		8000000
++#define SPI_SPEED		2000000
+ #define SPI_DEV_PATH	"/dev/spidev0.0"
+ #define SPI_CS_CHANGE   0
+ 
+diff --git a/libloragw/library.cfg b/libloragw/library.cfg
+index 8623492..c458a82 100644
+--- a/libloragw/library.cfg
++++ b/libloragw/library.cfg
+@@ -10,7 +10,7 @@
+ #               Note: building on the MAC (OSX) is for testing purposes only
+ #                 not for regular operations.
+ 
+-CFG_SPI= ftdi
++CFG_SPI= native
+ 
+ 
+ ### Specify which platform you are on. 
+@@ -20,7 +20,7 @@ CFG_SPI= ftdi
+ #  imst_rpi    This is for the IMST concentrators with a Raspberry Pi host.
+ #  linklabs_blowfish_rpi This is for the LinkLabs concentrators with a Raspberry Pi host.
+ 
+-PLATFORM= multitech_x86_64
++PLATFORM= imst_rpi
+ 
+ 
+ ### Debug options ###

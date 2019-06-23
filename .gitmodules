@@ -1,0 +1,9 @@
+[submodule "submodules/lora_gateway"]
+	path = submodules/lora_gateway
+	url = https://github.com/kersing/lora_gateway
+[submodule "submodules/ttn-gateway-connector"]
+	path = submodules/ttn-gateway-connector
+	url = https://github.com/kersing/ttn-gateway-connector
+[submodule "submodules/protobuf-c"]
+	path = submodules/protobuf-c
+	url = https://github.com/protobuf-c/protobuf-c
